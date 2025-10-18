@@ -123,5 +123,29 @@ p{
     margin-top: 0.5em;
 }
 
+@media screen and (max-width: 684px) {
+    .container{
+        flex-direction: column;
+    }
+    .result{
+        margin-bottom: -0.8em;
+        margin-top: 0.2em;
+        border-radius: 0 0 1.2rem 1.2rem;
+    }
+    .summary{
+        border-radius: 0 0 1.2rem 1.2rem;
+        margin-bottom: 0.2em; 
+    }
+}
+@media screen and (max-width: 365px) { 
+    .result{ 
+        width: 300px;
+    }
+    .summary{ 
+        width: 300px;
+    }
+}
+
+
 /* .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); } */
