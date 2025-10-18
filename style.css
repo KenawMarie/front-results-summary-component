@@ -22,22 +22,22 @@ body{
 }
 
 p{
-    font-size: 18px; 
+    font-size: 1.125rem; 
 }
 .result{
     background: linear-gradient(180deg,hsla(252, 100%, 67%, 0.993),hsla(241, 81%, 54%, 0.993));
-    width: 350px; 
+    width: 18.75rem; 
     padding: 2.5em 1.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
     color:hsl(241, 100%, 89%) ;
     gap: 1.5rem;
-    border-radius: 1.2rem;
-    margin-right: -1em;
+    border-radius: 1.2rem; 
+    z-index: 1;
 }
 .result>:first-child{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: hsl(241, 100%, 89%); 
 } 
 .result h2{
@@ -48,8 +48,8 @@ p{
 }
 .outer{
     background: linear-gradient(180deg,hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
-    width: 130px;
-    height: 130px;
+    width: 9.375rem;
+    height: 9.375rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,20 +57,21 @@ p{
     border-radius: 50%;
 }
 .outer>:first-child{
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 800;
     color: hsl(0, 0%, 100%);
 }
 
 
 .summary{
-    width: 350px;
+    position: relative;
+    width: 21.875rem;
     background-color:hsl(0, 0%, 100%);
     display: flex;
     flex-direction: column;
     border-radius:0 1.2rem 1.2rem 0;
-    padding: 2.5em 2em 2.5em 3.5em;
-    z-index: -1;
+    padding: 2em 2em 2.5em 3.5em;
+    margin-left:-1em ;
 }
 .summary>div{
     display: flex;
@@ -87,12 +88,13 @@ p{
     
 }
 .summary h2{
-    padding-bottom: 1em;
+    padding-bottom: 0.6em;
 }
 .reaction{
     color:hsl(0, 100%, 67%) ;
     background-color: hsla(39, 100%, 56%, 0.123);
 }
+
 .memory{
     color: hsl(39, 100%, 56%);
     background-color: hsla(39, 100%, 56%, 0.185);
@@ -115,34 +117,43 @@ p{
 .btn{
     font-family: inherit;
     padding: 0.7em;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     background-color: hsl(234, 85%, 45%);
     color: hsl(0, 0%, 100%);
     font-size: 1.2rem;
     font-weight: 600;
     margin-top: 0.5em;
+    border: none;
 }
+ .btn:hover,
+ .btn:hover{
+    cursor: pointer;
+    background-color: hsla(241, 81%, 54%, 0.993);
+ }
 
-@media screen and (max-width: 684px) {
+
+@media screen and (max-width: 42.75rem) {
     .container{
         flex-direction: column;
     }
     .result{
         margin-bottom: -0.8em;
-        margin-top: 0.2em;
-        border-radius: 0 0 1.2rem 1.2rem;
+        margin-top: 0.2em; 
+        width: 21.875rem;
     }
     .summary{
-        border-radius: 0 0 1.2rem 1.2rem;
-        margin-bottom: 0.2em; 
+        border-radius: 0;
+        margin-bottom: 0.2em;
+        width: 21.875rem;
+        margin-left: 0;
     }
 }
-@media screen and (max-width: 365px) { 
+@media screen and (max-width: 22.8125rem) { 
     .result{ 
-        width: 300px;
+        width: 18.75rem;
     }
     .summary{ 
-        width: 300px;
+        width: 18.75rem;
     }
 }
 
