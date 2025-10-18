@@ -11,22 +11,22 @@
 } 
 body{
     font-family: 'HankenGrotesk';
-    background-color: hsl(221, 100%, 96%);
+    background-color: hsl(241, 100%, 89%);
     display: flex;
     justify-content: center;
     align-items: center; 
     min-height: 100vh;
 }
 .container{
-    display: flex;  
+    display: flex; 
 }
 
 p{
     font-size: 18px; 
 }
 .result{
-    background: linear-gradient(180deg,hsla(252, 100%, 67%, 0.993),hsla(241, 81%, 54%, 0.952));
-    max-width: 300px; 
+    background: linear-gradient(180deg,hsla(252, 100%, 67%, 0.993),hsla(241, 81%, 54%, 0.993));
+    width: 350px; 
     padding: 2.5em 1.5em;
     display: flex;
     flex-direction: column;
@@ -34,6 +34,7 @@ p{
     color:hsl(241, 100%, 89%) ;
     gap: 1.5rem;
     border-radius: 1.2rem;
+    margin-right: -1em;
 }
 .result>:first-child{
     font-size: 1.2rem;
@@ -60,5 +61,67 @@ p{
     font-weight: 800;
     color: hsl(0, 0%, 100%);
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+
+.summary{
+    width: 350px;
+    background-color:hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    border-radius:0 1.2rem 1.2rem 0;
+    padding: 2.5em 2em 2.5em 3.5em;
+    z-index: -1;
+}
+.summary>div{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1em;
+    margin-bottom: 1em; 
+    padding: 0.7em;
+    border-radius: 6px;
+    font-weight: 600;
+}
+.summary>div>div{
+    display: flex; 
+    gap: 0.6rem;
+    
+}
+.summary h2{
+    padding-bottom: 1em;
+}
+.reaction{
+    color:hsl(0, 100%, 67%) ;
+    background-color: hsla(39, 100%, 56%, 0.123);
+}
+.memory{
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.185);
+}
+.verbal{
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.11);
+}
+.visual{
+    background-color: hsla(224, 30%, 27%, 0.068);
+}
+
+.summary .grey{
+    color: hsla(224, 30%, 27%, 0.63);
+}
+.summary .black{
+    color: #000;
+}
+
+.btn{
+    font-family: inherit;
+    padding: 0.7em;
+    border-radius: 50px;
+    background-color: hsl(234, 85%, 45%);
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 0.5em;
+}
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
